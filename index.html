@@ -6,30 +6,75 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
       color: white;
       text-align: center;
       margin: 0;
       padding: 0;
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center center fixed;
+      background-size: cover;
     }
     h1 {
-      margin-top: 50px;
+      margin-top: 30px;
       font-size: 3em;
+      text-shadow: 2px 2px 4px #000;
     }
     p {
       font-size: 1.2em;
+      text-shadow: 1px 1px 3px #000;
     }
     footer {
       margin-top: 50px;
       font-size: 0.9em;
       opacity: 0.8;
     }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <h1>🚀 Welcome to My First Website!</h1>
+
+  <!-- Bible Cross Image -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Christian_cross.svg/800px-Christian_cross.svg.png" 
+       alt="Bible Cross" width="150">
+
   <p>This is my debut site, live on the internet.</p>
-  <p>Made with the help of myself 😎</p>
-  <footer>© 2026 mgk </footer>
+  <p>Made with the help of my chief Copilot 😎</p>
+
+  <!-- Buttons -->
+  <button onclick="changeBackground()">Change Background</button>
+  <button onclick="window.open('https://www.google.com/maps/place/Tanzania')">View My Origin</button>
+  <button onclick="window.open('https://wa.me/255785089828')">Chat with Me on WhatsApp</button>
+
+  <!-- World Cup Message -->
+  <p style="margin-top:30px; font-size:1.3em; color:white; background:rgba(0,0,0,0.5); padding:10px; border-radius:8px;">
+    Get prepared for this World Cup, for Portugal will take the world cup trophy.  
+    But don’t forget to be safe and stay healthy.  
+    Jesus loves you, Amen.
+  </p>
+
+  <footer>© 2026 Mdoeli</footer>
+
+  <!-- Script for Background Color Change -->
+  <script>
+    function changeBackground() {
+      const colors = [
+        "pink",
+        "yellow",
+        "darkblue",
+        "gold",
+        "silver",
+        "linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)"
+      ];
+      document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundSize = "cover";
+    }
+  </script>
 </body>
 </html>
